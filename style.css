@@ -1,0 +1,183 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+.logo-container,.nav-links,.logo-eco{
+    display: flex;
+}
+.logo-container{
+    flex: 1;
+}
+.logo{
+    font-weight: 500;
+    font-size: 25px;
+    margin: 5px;
+}
+nav{
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    color: #5f5f79;
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.logo-eco{
+    flex: 1;
+    justify-content: flex-end;
+}
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+.introduction{
+    flex: 1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 500;
+    color: #494964;
+}
+.intro-text h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: #494964;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772
+}
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+button{
+    border-width: 4px;
+    background-color: rgba(226, 215, 215, 0.986);
+    color: #494964;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px;
+}
+.cover{
+    flex: 0.5;
+    height: 52vh;
+}
+.cover img{
+    padding-left: 70px;
+    animation: drop 2s ease;
+    /*filter: drop-shadow(5px 5px 5px black);*/
+}
+
+footer{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media screen and (max-width: 500px){
+    .logo {
+        font-weight: 500;
+        font-size: 15px;
+        margin: 5px;
+    }
+    .logo-container {
+        height: 24px;
+    }
+    .logo-eco {
+        display:none;
+    }
+    .nav-link{
+        font-size: 10px;
+    }
+   .presentation{
+   flex-direction: column;
+   }
+   .introduction{
+       margin-top: 5vh;
+       text-align: center;
+       
+   }
+   .intro-text h1{
+       font-size: 24px;
+   }
+   .intro-text p{
+       font-size: 16px;
+   }
+   .cta{
+       padding: 10px 0px 0px 0px;
+   }
+   .cover img{
+       padding-left: 0;
+       width:100%;
+       height:auto;
+}
+    button {
+        border-width: 4px;
+        background-color: rgba(226, 215, 215, 0.986);
+        color: #494964;
+        width: 80px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 16px;
+    }
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+
+    }
+
+    .map-responsive iframe{
+
+        height:100%;
+        width:100%;
+    }
+    footer{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+}
+
